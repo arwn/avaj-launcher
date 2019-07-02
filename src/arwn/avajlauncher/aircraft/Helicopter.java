@@ -1,5 +1,7 @@
 package arwn.avajlauncher;
 
+import arwn.avajlauncher.aircraft.Aircraft;
+
 public class Helicopter extends Aircraft implements Flyable{
     private WeatherTower weatherTower;
 

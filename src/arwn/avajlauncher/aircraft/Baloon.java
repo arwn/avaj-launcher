@@ -1,6 +1,8 @@
 package arwn.avajlauncher;
 
-public class JetPlane extends Aircraft implements Flyable{
+import arwn.avajlauncher.aircraft.Aircraft;
+
+public class Baloon extends Aircraft implements Flyable {
     private WeatherTower weatherTower;
 
     @Override
@@ -8,16 +10,16 @@ public class JetPlane extends Aircraft implements Flyable{
         String weather = weatherTower.getWeather(coordinates);
         if (weather.equals("SUN")) {
             System.out.println(this + " Ladies and gentlemen, weather looks great, sit tight and enjoy the flight.");
-            coordinates.addCoordinates(0, 10, 2);
+            coordinates.addCoordinates(2, 0, 4);
         } else if (weather.equals("RAIN")) {
             System.out.println(this + " Some turbulence up ahead, sorry for the inconvenience.");
-            coordinates.addCoordinates(0, 5, 0);
+            coordinates.addCoordinates(0, 0, -5);
         } else if (weather.equals("FOG")) {
             System.out.println(this + " Low visibility is gonna force us to delay our landing by a bit.");
-            coordinates.addCoordinates(0, 1, 0);
+            coordinates.addCoordinates(0, 0, -3);
         } else if (weather.equals("SNOW")) {
             System.out.println(this + " Getting a bit chilly....");
-            coordinates.addCoordinates(0, 0, -7);
+            coordinates.addCoordinates(0, 0, -15);
         }
 
         if (coordinates.getHeight() <= 0) {
@@ -33,10 +35,10 @@ public class JetPlane extends Aircraft implements Flyable{
 
     @Override
     public String toString() {
-        return String.format("JetPlane#%s (%d):", name, id);
+        return String.format("Baloon#%s (%d):", name, id);
     }
 
-    JetPlane(String name, Coordinates coordinates){
+    Baloon(String name, Coordinates coordinates){
         super(name, coordinates);
     }
 }

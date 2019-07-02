@@ -1,5 +1,7 @@
 package arwn.avajlauncher;
 
+import arwn.avajlauncher.aircraft.Coordinates;
+
 import java.util.Random;
 
 public class WeatherProvider {

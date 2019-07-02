@@ -1,5 +1,8 @@
 package arwn.avajlauncher;
 
+
+import arwn.avajlauncher.aircraft.Baloon;
+
 public class AircraftFactory {
     public static Flyable newAircraft(String type, String name, int longitude, int latitude, int height) throws NoSuchAircraftException {
         Coordinates cords = new Coordinates(longitude, latitude, height);

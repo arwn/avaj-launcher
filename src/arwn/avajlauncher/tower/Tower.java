@@ -1,5 +1,7 @@
 package arwn.avajlauncher;
 
+import arwn.avajlauncher.aircraft.Flyable;
+
 import java.util.ArrayList;
 
 public class Tower {
