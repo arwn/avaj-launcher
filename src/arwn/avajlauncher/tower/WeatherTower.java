@@ -1,4 +1,4 @@
-package arwn.avajlauncher;
+package arwn.avajlauncher.tower;
 
 
 import arwn.avajlauncher.aircraft.Coordinates;
@@ -9,7 +9,7 @@ public class WeatherTower extends Tower {
     public String getWeather(Coordinates coordinates){
         return w.getCurrentWeather(coordinates);
     }
-    void changeWeather(){
+    public void changeWeather(){
         conditionsChanged();
     }
 }

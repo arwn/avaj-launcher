@@ -1,6 +1,7 @@
-package arwn.avajlauncher;
+package arwn.avajlauncher.aircraft;
 
-import arwn.avajlauncher.aircraft.Aircraft;
+import arwn.avajlauncher.tower.WeatherTower;
+
 
 public class Baloon extends Aircraft implements Flyable {
     private WeatherTower weatherTower;

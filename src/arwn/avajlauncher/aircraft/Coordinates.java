@@ -1,4 +1,4 @@
-package arwn.avajlauncher;
+package arwn.avajlauncher.aircraft;
 
 public class Coordinates {
     private int longitude;

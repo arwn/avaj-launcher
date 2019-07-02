@@ -1,6 +1,4 @@
-package arwn.avajlauncher;
-
-import arwn.avajlauncher.aircraft.Baloon;
+package arwn.avajlauncher.aircraft;
 
 public class Zeppelin extends Baloon {
     Zeppelin(String name, Coordinates coordinates) {
