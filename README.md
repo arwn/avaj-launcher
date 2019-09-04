@@ -7,7 +7,7 @@ avaj-launcher simulates multiple change in operating conditions for each aircraf
 
 The classes are implemented in with respect to avaj-uml.jpg
 
-![image](./avaj-uml.jpg "uml")
+![image](./avaj_uml.jpg "uml")
 
 ## building
 `sh compile.sh`
